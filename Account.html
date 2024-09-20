@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="head">
+        <header class="container">
+          <nav class="navbar">
+            <div class="logo">
+                <a href="Index.html"><img src="Media/SSLogo.png" alt="Soil&Soul logo" width="130px"></a>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="AllProducts.html">Products</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Support.html">Support</a></li>
+                </ul>
+            </div>
+            <a href="Cart.html"> <img src="Media/Cart-removebg-preview.png" alt="Cart Icon" width="30px" height="30px"></a>
+          </nav>
+        </header>
+        </div>
+       <!---Account Page-->
+       <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col2">
+                    <img src="Media/imagehero.png" width="100%">
+                </div>
+                <div class="col2">
+                    <div class="form-container">
+                       <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                       </div> 
+                       <form id="Login">
+                        <input type="text" placeholder="Username" required>
+                        <input type="password" placeholder="password" required>
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot Password?</a>
+                       </form>
+                       <form id="Register">
+                        <input type="text" placeholder="Username" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="password" required>
+                        <button type="submit" class="btn">Register</button>
+                        
+                       </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+            <!---FOOTER-->
+    <footer class="Footer">
+        <div class="row">
+          <div class="col1">
+            <div class="navigation">
+              <ul>
+                  <li><a href="Index.html">Home</a></li>
+                  <li><a href="AllProducts.html">Products</a></li>
+                  <li><a href="Blog.html">Blog</a></li>
+                  <li><a href="Account.html">Account</a></li>
+                  <li><a href="About.html">About</a></li>
+                  <li><a href="Support.html">Support</a></li>
+              </ul>
+          </div>
+          </div>
+          <div class="col2">
+            <img src="Media/SSLogo.png" height="250px">
+            <p>For All Your Gardening Essentials!</p>
+          </div>
+          <div class="col3">
+            <p>Follow Us On Our Socials</p>
+            <ul>
+              <li><a href="Instagram.com/Soil&Soul_na">Instagram</a> </li>
+              <li><a href="X.com/Soil&Soul_na">Facebook</a> </li>
+              <li><a href="Pinterest.com/Soil&Soul_na">Pinterest</a> </li>
+              <li><a href="Youtube.com/Soil&Soul_na">Youtube</a> </li>
+              <li><a href="Facebook.com/Soil&Soul_na">X</a> </li>
+            </ul>
+          </div>
+        </div>
+           <hr>
+           <p class="Copyright">©Copyright 2024 - Soil&Soul|Developed by Vevangee Mukungu</p>
+      </footer>
+      <script>
+        var Login =document.getElementById("Login");
+        var Register =document.getElementById("Register");
+        var Indicator=document.getElementById("Indicator");
+        function register(){
+            Register.style.transform = "translatex(0px)";
+            Login.style.transform = "translatex(0px)";
+            Indicator.style.transform = "translatex(100px)";
+        }
+        function login(){
+            Register.style.transform = "translatex(300px)";
+            Login.style.transform = "translatex(300px)";
+            Indicator.style.transform="translateX(0px)";
+        }
+      </script>
+</body>
+</html>
